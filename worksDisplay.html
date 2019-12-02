@@ -3,10 +3,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Swiper demo</title>
+  <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/swiper.min.js"></script>
 
   <style>
@@ -81,9 +82,22 @@
     	background: #d4d4d4;
     	margin-top: 5px;
     }
+    .back{
+    	width: 100%;
+    	padding: 20px 30px;
+    	box-sizing: border-box;
+    }
+    .back img{
+    	width: 30px;
+    	height: 30px;
+    	cursor: pointer;
+    }
   </style>
 </head>
 <body>
+	<div class="back">
+		<img src="images/back.png">
+	</div>
 	<div class="con">
 		You're now browing My 
 		<br>
@@ -96,16 +110,13 @@
   	<div class="swiper-container">
 	    <div class="swiper-wrapper">
 	      <div class="swiper-slide">
-	      	<img src="images/b1.jpg">
+	      	<img src="images/b9.jpg">
 	      </div>
 	      <div class="swiper-slide">
-	      	<img src="images/b2.jpg">
+	      	<img src="images/o1.jpg">
 	      </div>
 	      <div class="swiper-slide">
-	      	<img src="images/b3.jpg">
-	      </div>
-	      <div class="swiper-slide">
-	      	<img src="images/b4.jpg">
+	      	<img src="images/b7.jpg">
 	      </div>
 	      
 	    </div>
@@ -115,19 +126,13 @@
   	<div class="swiper-container">
 	    <div class="swiper-wrapper">
 	      <div class="swiper-slide">
-	      	<img src="images/b5.jpg">
+	      	<img src="images/b13.jpg">
 	      </div>
 	      <div class="swiper-slide">
-	      	<img src="images/b6.jpg">
+	      	<img src="images/b4.jpg">
 	      </div>
 	      <div class="swiper-slide">
-	      	<img src="images/b7.jpg">
-	      </div>
-	      <div class="swiper-slide">
-	      	<img src="images/b8.jpg">
-	      </div>
-	      <div class="swiper-slide">
-	      	<img src="images/b9.jpg">
+	      	<img src="images/b14.jpg">
 	      </div>
 	    </div>
 	  </div>
@@ -136,20 +141,12 @@
   	<div class="swiper-container">
 	    <div class="swiper-wrapper">
 	      <div class="swiper-slide">
-	      	<img src="images/b10.jpg">
-	      </div>
-	      <div class="swiper-slide">
-	      	<img src="images/b11.jpg">
-	      </div>
-	      <div class="swiper-slide">
-	      	<img src="images/b13.jpg">
-	      </div>
-	      <div class="swiper-slide">
 	      	<img src="images/b8.jpg">
 	      </div>
 	      <div class="swiper-slide">
-	      	<img src="images/b9.jpg">
+	      	<img src="images/b5.jpg">
 	      </div>
+	      
 	    </div>
 	  </div>
   </div>
@@ -157,29 +154,20 @@
   	<div class="swiper-container">
 	    <div class="swiper-wrapper">
 	      <div class="swiper-slide">
-	      	<img src="images/b13.jpg">
+	      	<img src="images/b11.jpg">
 	      </div>
 	      <div class="swiper-slide">
-	      	<img src="images/b1.jpg">
+	      	<img src="images/b15.jpg">
 	      </div>
 	      <div class="swiper-slide">
-	      	<img src="images/b3.jpg">
-	      </div>
-	      <div class="swiper-slide">
-	      	<img src="images/b8.jpg">
-	      </div>
-	      <div class="swiper-slide">
-	      	<img src="images/b9.jpg">
+	      	<img src="images/b16.jpg">
 	      </div>
 	    </div>
 	  </div>
   </div>
-  <!-- Swiper JS -->
-
-  <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.first .swiper-container', {
-      slidesPerView: 3,
+      slidesPerView: 2.7,
       spaceBetween: 30,
       freeMode: true,
       pagination: {
@@ -189,7 +177,7 @@
     });
 
     var swiper = new Swiper('.second .swiper-container', {
-      slidesPerView: 3,
+      slidesPerView: 2.7,
       spaceBetween: 30,
       freeMode: true,
       pagination: {
@@ -198,7 +186,7 @@
       },
     });
     var swiper = new Swiper('.third .swiper-container', {
-      slidesPerView: 2,
+      slidesPerView: 1.8,
       spaceBetween: 30,
       freeMode: true,
       pagination: {
@@ -207,7 +195,7 @@
       },
     });
     var swiper = new Swiper('.fourth .swiper-container', {
-      slidesPerView: 3,
+      slidesPerView: 2.7,
       spaceBetween: 30,
       freeMode: true,
       pagination: {
@@ -215,6 +203,10 @@
         clickable: true,
       },
     });
+    
+    $(".back").on("click",function(){
+    	history.go(-1);
+    })
   </script>
 </body>
 </html>

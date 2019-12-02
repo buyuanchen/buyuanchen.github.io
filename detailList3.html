@@ -40,7 +40,11 @@
 			color: #fff;
 		}
 
-		.con ul li:hover {
+		.con ul li a {
+			color: #fff;
+		}
+
+		.con ul li a:hover {
 			color: #c7c7c7;
 			cursor: pointer;
 		}
@@ -122,47 +126,53 @@
 	<div class="con">
 		<ul>
 			<li>
-				GAME cos
+				<a href="detailList2.html">
+					GAME cos
+				</a>
 			</li>
 			<li>
-				ANIMWE cos
+				<a href="detailList.html">
+					ANIMWE cos
+				</a>
 			</li>
 			<li>
-				WAN CHINESE
+				<a href="">
+					WAN CHINESE
+				</a>
 			</li>
 		</ul>
 		<div class="con_rg">
 			<div class="con_rg_img">
 				<div class="img_list hid200">
 					<div class="imgFir">
-						<img src="images/w4.jpg">
+						<img src="images/x1.jpg">
 					</div>
 					<div class="imgSen">
-						<img src="images/w1.jpg">
+						<img src="images/x2.jpg">
 					</div>
 					<div class="imgFir">
-						<img src="images/w2.jpg">
+						<img src="images/x3.jpg">
 					</div>
 				</div>
 				<div class="img_list">
 					<div class="imgCen img6">
-						<img src="images/w6.jpg">
+						<img src="images/x4.jpg">
 					</div>
 					<div class="imgCen">
-						<img src="images/w7.jpg">
+						<img src="images/x5.jpg">
 					</div>
 				</div>
 				<div class="imgOne">
-					<img src="images/w11.jpg">
+					<img src="images/x6.jpg">
 				</div>
 
 			</div>
 		</div>
-	</div><!-- Root element of PhotoSwipe. Must have class pswp. -->
+	</div>
 	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
 		<!-- Background of PhotoSwipe.
-								         It's a separate element, as animating opacity is faster than rgba(). -->
+									         It's a separate element, as animating opacity is faster than rgba(). -->
 		<div class="pswp__bg"></div>
 
 		<!-- Slides wrapper with overflow:hidden. -->
@@ -238,7 +248,6 @@
 		});
 	</script>
 </body>
-
 <script type="text/javascript">
 	$(".back").on("click", function () {
 		history.go(-1);

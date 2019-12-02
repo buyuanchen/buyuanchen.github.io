@@ -77,6 +77,10 @@ body {
     margin: 0;
     padding: 0;
   }
+  a,li{
+    text-decoration: none;
+    list-style: none;
+  }
   html{
     height: 100%;
   }
@@ -107,16 +111,17 @@ body {
   .con{
     padding: 0 60px;
     box-sizing: border-box;
-    color: #fff;
+   
     font-size: 30px;
     margin-top: 160px;
     position: absolute;
   }
-  .con p{
+  .con p a{
     margin: 10px 0;
     width: 100px;
+    color: #fff;
   }
-  .con p:hover{
+  .con p a:hover{
     color: red;
     cursor: pointer;
   }
@@ -161,10 +166,26 @@ body {
       </div>
     </div>
     <div class="con">
-      <p>Work</p>
-      <p>About</p>
-      <p>Blog</p>
-      <p>Contact</p>
+      <p>
+        <a href="exhibition.html">
+          Work
+        </a>
+      </p>
+      <p>
+        <a href="about.html">
+          About
+        </a>
+      </p>
+      <p>
+        <a href="">
+          Blog
+        </a>
+      </p>
+      <p>
+        <a href="">
+          Contact
+        </a>
+      </p>
     </div>
     <div class="bot">
       <div class="bot_tl">
