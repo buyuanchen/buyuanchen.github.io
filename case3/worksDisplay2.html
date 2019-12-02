@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/swiper.min.js"></script>
+
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #000;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .first {
+      height: 300px;
+      margin-top: 30px;
+    }
+
+    .swiper-container {
+      width: 90%;
+      height: 100%;
+      margin: 0 auto;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .second {
+      height: 300px;
+      margin-top: 10px;
+    }
+
+    .third {
+      height: 300px;
+      margin-top: 10px;
+    }
+
+    .fourth {
+      height: 300px;
+      margin-top: 10px;
+    }
+
+    .con {
+      width: 100%;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      color: #d4d4d4;
+      font-size: 20px;
+      background: #424242;
+    }
+
+    .swiper-slide {
+      background: none !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="con">
+    Graphic design
+  </div>
+  <div class="first">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/o2.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/o4.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/o3.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="second">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/f1.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/f2.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/f3.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="third">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/l1.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/l2.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fourth">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/egg1.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/egg2.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/egg3.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <link rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+  <script type="text/javascript" src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script>
+    $(function () {
+      $("body img").each(function (i) {
+        if (!this.parentNode.href) {
+          $(this).wrap("<a href='" + this.src + "' data-fancybox='fancybox' data-caption='" + this.alt + "'></a>")
+        }
+      })
+    })
+    $(document).ready(function () {
+      $("[data-fancybox]").fancybox()
+    });
+  </script>
+  <script>
+    var swiper = new Swiper('.first .swiper-container', {
+      slidesPerView: 2.7,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
+    var swiper = new Swiper('.second .swiper-container', {
+      slidesPerView: 2.7,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+    var swiper = new Swiper('.third .swiper-container', {
+      slidesPerView: 1.8,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+    var swiper = new Swiper('.fourth .swiper-container', {
+      slidesPerView: 2.7,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>

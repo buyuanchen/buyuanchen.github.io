@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>index</title>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		li,
+		a {
+			list-style: none;
+			text-decoration: none;
+		}
+
+		body {
+			background: #000;
+		}
+
+		.con {
+			display: flex;
+			padding-top: 60px;
+			box-sizing: border-box;
+		}
+
+		.con ul {
+			width: 150px;
+		}
+
+		.con ul li {
+			color: #fff;
+			font-size: 12px;
+			padding-left: 60px;
+			box-sizing: border-box;
+			margin: 5px 0;
+			color: #fff;
+		}
+
+		.con ul li:hover {
+			color: #c7c7c7;
+			cursor: pointer;
+		}
+
+		.con_rg {
+			flex: 1;
+		}
+
+		.con_rg_img {
+			margin-left: 80px;
+		}
+
+		.img_list {
+			display: flex;
+			height: 240px;
+			overflow: hidden;
+		}
+
+		.img_list div {
+			margin: 0 3px;
+		}
+
+		.imgFir {
+			width: 210px;
+		}
+
+		.imgFir img {
+			width: 100%;
+			height: 100%;
+		}
+
+		.imgSen {
+			width: 200px;
+		}
+
+		.imgSen img {
+			width: 100%;
+			height: 100%;
+		}
+
+		.imgCen {
+			width: 310px;
+		}
+
+		.img6 img {
+			height: 100%;
+		}
+
+		.imgCen img {
+			width: 100%;
+		}
+
+		.imgOne img {
+			width: 200px;
+		}
+
+		.hid200 {
+			height: 230px;
+			overflow: hidden;
+		}
+
+		.back {
+			width: 100%;
+			padding: 20px 30px;
+			box-sizing: border-box;
+		}
+
+		.back img {
+			width: 30px;
+			height: 30px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="back">
+		<img src="images/back.png">
+	</div>
+	<div class="con">
+		<ul>
+			<li>
+				<a href="./detailList2.html">
+					GAME cos
+				</a>
+			</li>
+			<li>
+				<a href="./detailList.html">
+					ANIMWE cos
+				</a>
+			</li>
+			<li>
+				<a href="./detailList3.html">
+					WAN CHINESE
+				</a>
+			</li>
+		</ul>
+		<div class="con_rg">
+			<div class="con_rg_img">
+				<div class="img_list hid200">
+					<div class="imgFir">
+						<img src="images/v1.jpg">
+					</div>
+					<div class="imgSen">
+						<img src="images/v2.jpg">
+					</div>
+					<div class="imgFir">
+						<img src="images/v3.jpg">
+					</div>
+				</div>
+				<div class="img_list">
+					<div class="imgCen img6">
+						<img src="images/v4.jpg">
+					</div>
+					<div class="imgCen">
+						<img src="images/v5.jpg">
+					</div>
+				</div>
+				<div class="imgOne">
+					<img src="images/v6.jpg">
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+		<!-- Background of PhotoSwipe.
+									         It's a separate element, as animating opacity is faster than rgba(). -->
+		<div class="pswp__bg"></div>
+
+		<!-- Slides wrapper with overflow:hidden. -->
+		<div class="pswp__scroll-wrap">
+
+			<!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+			<!-- don't modify these 3 pswp__item elements, data is added later on. -->
+			<div class="pswp__container">
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+			</div>
+
+			<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+			<div class="pswp__ui pswp__ui--hidden">
+
+				<div class="pswp__top-bar">
+
+					<!--  Controls are self-explanatory. Order can be changed. -->
+
+					<div class="pswp__counter"></div>
+
+					<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+					<!-- <button class="pswp__button pswp__button--share" title="Share"></button> -->
+
+					<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+					<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+					<!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+					<!-- element will get class pswp__preloader--active when preloader is running -->
+					<div class="pswp__preloader">
+						<div class="pswp__preloader__icn">
+							<div class="pswp__preloader__cut">
+								<div class="pswp__preloader__donut"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+					<div class="pswp__share-tooltip"></div>
+				</div>
+
+				<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+				</button>
+
+				<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+				</button>
+
+				<div class="pswp__caption">
+					<div class="pswp__caption__center"></div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+	<script type="text/javascript" src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+	<script>
+		$(function () {
+			$(".con_rg_img img").each(function (i) {
+				if (!this.parentNode.href) {
+					$(this).wrap("<a href='" + this.src + "' data-fancybox='fancybox' data-caption='" + this.alt + "'></a>")
+				}
+			})
+		})
+		$(document).ready(function () {
+			$("[data-fancybox]").fancybox()
+		});
+	</script>
+</body>
+<script type="text/javascript">
+	$(".back").on("click", function () {
+		history.go(-1);
+	})
+</script>
+
+</html>
