@@ -117,6 +117,22 @@
   .logo img{
     width: 65px;
   }
+  @media screen and (max-width: 450px) {
+    .swiper-slide a{
+      height: 100%;
+    }
+    .swiper-slide{
+      width: 150px !important;
+      height: 100%;
+
+    }
+    .bloHei{
+      height: 100px;
+    }
+    .fourth{
+      margin-bottom: 30px;
+    }
+  }
   </style>
 </head>
 
@@ -135,7 +151,7 @@
 
     </div>
   </div>
-  <div class="first">
+  <div class="first bloHei">
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -151,7 +167,7 @@
       </div>
     </div>
   </div>
-  <div class="second">
+  <div class="second bloHei">
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -166,7 +182,7 @@
       </div>
     </div>
   </div>
-  <div class="third">
+  <div class="third bloHei">
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -179,7 +195,7 @@
       </div>
     </div>
   </div>
-  <div class="fourth">
+  <div class="fourth bloHei">
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -212,48 +228,7 @@
       </div>
 
       <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-      <div class="pswp__ui pswp__ui--hidden">
-
-        <div class="pswp__top-bar">
-
-          <!--  Controls are self-explanatory. Order can be changed. -->
-
-          <div class="pswp__counter"></div>
-
-          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-          <!-- <button class="pswp__button pswp__button--share" title="Share"></button> -->
-
-          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-          <!-- element will get class pswp__preloader--active when preloader is running -->
-          <div class="pswp__preloader">
-            <div class="pswp__preloader__icn">
-              <div class="pswp__preloader__cut">
-                <div class="pswp__preloader__donut"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-          <div class="pswp__share-tooltip"></div>
-        </div>
-
-        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-        </button>
-
-        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-        </button>
-
-        <div class="pswp__caption">
-          <div class="pswp__caption__center"></div>
-        </div>
-
-      </div>
+      
 
     </div>
 
@@ -274,7 +249,7 @@
   </script>
   <script>
     var swiper = new Swiper('.first .swiper-container', {
-      slidesPerView: 2.7,
+      slidesPerView: 1.8,
       spaceBetween: 30,
       freeMode: true,
       pagination: {
@@ -284,7 +259,7 @@
     });
 
     var swiper = new Swiper('.second .swiper-container', {
-      slidesPerView: 2.7,
+      slidesPerView: 1.8,
       spaceBetween: 30,
       freeMode: true,
       pagination: {
@@ -302,7 +277,7 @@
       },
     });
     var swiper = new Swiper('.fourth .swiper-container', {
-      slidesPerView: 2.7,
+      slidesPerView: 1.8,
       spaceBetween: 30,
       freeMode: true,
       pagination: {

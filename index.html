@@ -2,10 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>粒子偏差动画</title>
+<title>index</title>
 <script src="js/jquery.min.js"></script>
+ <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0" />
 <style>
-@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
+
 .more-pens {
   position: fixed;
   left: 20px;
@@ -162,6 +163,22 @@ body {
   .logo img{
     width: 65px;
   }
+  @media screen and (max-width: 450px) {
+      .con {
+        padding: 0 00px;
+        margin-top: 30px;
+        padding-left: 35px;
+        padding-top: 60px;
+    }
+     .top_img{
+      position: absolute;
+      top: 30px;
+      right: 30px;
+    }
+    .top_tl{
+      display: none;
+    }
+  }
 </style>
 </head>
 <body>
@@ -187,6 +204,7 @@ body {
           About
         </a>
       </p>
+      
     </div>
     <div class="bot">
       <div class="bot_tl">
@@ -204,7 +222,6 @@ body {
         </div>
       </div>
     </div>
-
 <script>
 'use strict';
 
